@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 class="nav-brand">Register</h1>
+    </nav>
+    <main class="container">
+      <form id="registration-form">
+        <div>
+          <label for="register-text">Имя пользователя*</label>
+          <input
+            class="input"
+            type="text"
+            id="register-text"
+            name="text"
+            autocomplete="off"
+          />
+          <span id="text-error"></span>
+        </div>
+        <div>
+          <label for="register-password">Пароль*</label>
+          <input
+            class="input"
+            type="password"
+            id="register-password"
+            name="password"
+            autocomplete="off"
+            required
+          />
+          <span id="password-error"></span>
+        </div>
+        <div>
+          <label for="register-email">Email*</label>
+          <input
+            class="input"
+            type="email"
+            id="register-email"
+            name="email"
+            autocomplete="off"
+            required
+          />
+          <span id="email-error"></span>
+        </div>
+        <div>
+          <label for="register-phone">Телефон*</label>
+          <input
+            class="input"
+            type="tel"
+            id="register-phone"
+            name="phone"
+            autocomplete="off"
+            required
+          />
+          <span id="phone-error"></span>
+        </div>
+
+        <button class="btn btn-default" type="submit">Отправить данные</button>
+      </form>
+    </main>
+    <script type="module" src="src/js/index.js"></script>
+  </body>
+</html>
